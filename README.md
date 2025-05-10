@@ -93,7 +93,7 @@ This project closely mirrors [yu-takagi/StableDiffusionReconstruction](https://g
   A Jupyter notebook for decoding captions from fMRI data using trained models.
 
 * **`decode_captions_occluded.py`**
-  Decodes captions from fMRI data corresponding to occluded images.([GitHub][3])
+  Decodes captions from fMRI data corresponding to occluded images.
 
 * **`dptemb2dpt.py`**
   Converts DPT embeddings back to depth maps for visualization or further processing.
