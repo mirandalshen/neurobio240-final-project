@@ -219,15 +219,6 @@ python diffusion_decoding.py --imgidx 0 --gpu 1 --subject subj01 --method text
 ```
 ## Reconstruction with Decoded Text Prompt + GAN
 
-### `setup.py` (in `codes/gan/bdpy/`)
-
-**Install the modified `bdpy` package required for reconstruction.**
-
-```bash
-cd codes/gan/bdpy/
-python setup.py install
-```
-
 ### `make_vgg19bdpy.py`
 
 **Extract VGG19 features for NSD stimulus images.**
