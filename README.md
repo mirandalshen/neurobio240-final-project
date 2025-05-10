@@ -224,7 +224,6 @@ python diffusion_decoding.py --imgidx 0 --gpu 1 --subject subj01 --method text
 **Extract VGG19 features for NSD stimulus images.**
 
 ```bash
-cd codes/gan/
 python make_vgg19bdpy.py --imgidx 0 73000
 ```
 
@@ -235,7 +234,6 @@ python make_vgg19bdpy.py --imgidx 0 73000
 **Create feature matrices for each VGG19 layer.**
 
 ```bash
-cd codes/utils/
 python make_subjstim_vgg19.py --layer conv1_1 --subject subj01
 python make_subjstim_vgg19.py --layer conv1_2 --subject subj01
 ...
@@ -255,7 +253,6 @@ python ridge.py --target conv1_1 --roi early ventral midventral midlateral later
 **Combine decoded VGG19 features from multiple ROIs.**
 
 ```bash
-cd codes/gan/
 python make_vgg19fromdecode.py --subject subj01
 ```
 
@@ -272,7 +269,6 @@ python recon_icnn_image_vgg19_dgn_relu7gen_gd.py
 **Use the GAN reconstruction as conditioning input to Stable Diffusion.**
 
 ```bash
-cd codes/diffusion_sd1/
 python diffusion_decoding.py --imgidx 0 --gpu 0 --subject subj01 --method gan
 ```
 
@@ -289,7 +285,6 @@ pip install -U transformers
 **Extract DPT depth embeddings from stimulus images.**
 
 ```bash
-cd codes/depth/
 python img2feat_dpt.py --imgidx 0 73000 --gpu 0
 ```
 
@@ -319,7 +314,6 @@ Repeat for each DPT embedding layer.
 **Convert decoded DPT embeddings into full-resolution depth maps.**
 
 ```bash
-cd codes/depth/
 python dptemb2dpt.py --gpu 0 --subject subj01
 ```
 
@@ -328,7 +322,6 @@ python dptemb2dpt.py --gpu 0 --subject subj01
 **Fuse text, GAN, and depth priors for final image reconstruction.**
 
 ```bash
-cd codes/diffusion_sd2/
 python diffusion_decoding.py --imgidxs 0 1 --gpu 0 --subject subj01
 ```
 
