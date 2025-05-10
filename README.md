@@ -1,7 +1,9 @@
 # Reconstructing Occluded Images from fMRI via Latent Diffusion Models
 
 **Author:** Miranda Shen
+
 **Course:** NEUROBIO240 (Final Project)
+
 **Institution:** Harvard University
 
 ## Project Overview
