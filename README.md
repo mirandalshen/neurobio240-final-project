@@ -47,10 +47,10 @@ This project closely mirrors [yu-takagi/StableDiffusionReconstruction](https://g
   Extracts latent representations from fully visible images using Stable Diffusion's encoder.
 
 * **`img2feat_sd1_occlusion.py`**
-  Performs the same extraction as above but on occluded images.([Scholar Friends][1])
+  Performs the same extraction as above but on occluded images.
 
 * **`img2feat_blip.ipynb`**
-  Utilizes BLIP to extract vision-language embeddings (text captions) from full images.([GitHub][2])
+  Utilizes BLIP to extract vision-language embeddings (text captions) from full images.
 
 * **`img2feat_blip_occlusion.py`**
   Extracts BLIP embeddings from occluded images.
