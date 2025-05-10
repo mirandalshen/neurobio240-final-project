@@ -28,7 +28,10 @@ This project closely mirrors [yu-takagi/StableDiffusionReconstruction](https://g
 ### fMRI Data Processing
 
 * **`get_data.py`**
-  Downloads and processes trial-wise fMRI beta weights from the NSD dataset. It aligns these data with image stimuli and saves them in a memory-mapped format for efficient access during analysis.
+  Lists trial-wise fMRI beta weights from the NSD dataset.
+
+* **`img2feat_sd.ipynb`**
+  Downloads and caches NSD stimulus HDF5 file from S3. It aligns these data with image stimuli and saves them in a memory-mapped format for efficient access during analysis.
 
 * **`make_subjmri.ipynb`**
   A Jupyter notebook for visualizing and debugging fMRI preprocessing steps, such as ROI masking, signal alignment, and voxel selection.
